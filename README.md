@@ -29,10 +29,12 @@ To set up the environment and run the code, follow these steps:
    cd RAEndo
    ```
 2. **Install the required dependencies:**
-   ```bash
-   conda env create -f environment.yml
-   conda activate ra-endo
-   ```
+   
+| Methods                          | Instruction                                                 |
+|----------------------------------------|-------------------------------------------------------------|
+| **PrediXcan** | https://github.com/hakyimlab/PrediXcan           |
+| **heritability**| https://dougspeed.com/downloads2/              |
+| **hotnet** | https://raphael-group.github.io/projects/hotnet2/       |
 
 ## Usage
 
