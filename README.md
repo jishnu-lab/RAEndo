@@ -15,7 +15,7 @@ Here, we use a novel multi-scale framework that integrates a **network-based gen
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Reproducibility](##reproducibility)
+- [Reproducibility](#reproducibility)
 - [Contributing](#contributing)
 - [License](#license)
 
