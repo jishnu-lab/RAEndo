@@ -39,10 +39,55 @@ To set up the environment and run the code, follow these steps:
 ## Usage
 
 ### Running the Analysis
-- To run the full pipeline, use:
-  ```bash
-  python main_analysis.py
-  ```
+
+This analysis involves running multiple scripts in sequence. There is no main script, so each script should be executed individually. Follow the order outlined below for the complete analysis:
+
+1. **Heritability**: 
+   - This script estimates heritability across RA subtypes using genomic data.
+   - Navigate to the `heritability` directory:
+     ```bash
+     cd Code/heritability
+     ```
+   - Run the script:
+     ```bash
+     Rscript heritability_analysis.R
+     ```
+
+2. **HotNet2**: 
+   - This script identifies subnetworks associated with RA subtypes using the HotNet2 algorithm.
+   - Navigate to the `hotnet` directory:
+     ```bash
+     cd Code/hotnet
+     ```
+   - Run the script:
+     ```bash
+     Rscript process_hotnet_updated.R
+     ```
+
+3. **Bulk RNA-Seq Analysis**: 
+   - This script analyzes bulk RNA-seq data to identify gene expression patterns in RA subtypes.
+   - Navigate to the `bulk-rna` directory:
+     ```bash
+     cd Code/bulk-rna
+     ```
+   - Run the script:
+     ```bash
+     Rscript HLA_beta_feat_perm.R
+     ```
+
+4. **PrediXcan**: 
+   - This script performs gene expression prediction from genotypes using PrediXcan.
+   - Navigate to the `PrediXcan` directory:
+     ```bash
+     cd Code/PrediXcan
+     ```
+   - Run the script:
+     ```bash
+     Rscript imputation.R
+     ```
+
+Ensure you execute each script in the order listed above to maintain consistency and reproducibility of results.
+
 - For individual analyses, see the [Reproducibility](#reproducibility) table below.
 
 ## Reproducibility
