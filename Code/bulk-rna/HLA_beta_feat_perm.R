@@ -3,7 +3,7 @@
 ##################################################################
 
 # The main goal is to check performance of signficant IFNA genes
-# compared to random using priyamvad's reactome list of genes on May 8
+# compared to random using  reactome list of genes 
 # This code is based on feature permutation
 
 ##################################################################
