@@ -50,7 +50,8 @@ This analysis involves running multiple scripts in sequence. There is no main sc
      ```
    - Run the script:
      ```bash
-     Rscript heritability_analysis.R
+     bash make_grms.sh
+     
      ```
 
 2. **HotNet2**: 
