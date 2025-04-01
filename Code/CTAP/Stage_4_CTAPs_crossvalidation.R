@@ -12,7 +12,7 @@ library(dplyr)
 # Load your data
 modules <- readRDS("Data/significant_modules_members.RDS")
 RA_meta <- readRDS("CTAPs/RAmetaData.rds")
-psudobulks <- readRDS("CTAPs/unmathced_psudobulks.rds")  # Assuming you have a list of pseudobulk matrices for each cell type
+psudobulks <- readRDS("CTAPs/unmathced_psudobulks.rds")  #  List of pseudobulk matrices for each cell type
 
 # Define cell types (assuming you have a list of cell types)
 celltypes <- names(psudobulks)
