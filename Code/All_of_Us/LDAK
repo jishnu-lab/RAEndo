@@ -1,0 +1,3 @@
+./ldak5.2.linux_/ldak5.2.linux --cut-genes cut_genes --bfile ../"$bfile" --genefile LDAK_annot.txt
+./ldak5.2.linux_/ldak5.2.linux --calc-genes-reml cut_genes --pheno ../"$pheno" --bfile ../"$bfile" --ignore-weights YES --power -.25 --covar ../"$covar" --max-threads 30
+./ldak5.2.linux_/ldak5.2.linux --join-genes-reml cut_genes
